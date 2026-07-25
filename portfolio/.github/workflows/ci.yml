@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Install Dependencies
         run: npm install --no-audit --no-fund
@@ -36,14 +35,9 @@ jobs:
       - name: Run Linter
         run: npm run lint --if-present
 
-               # Yes, exactly! Changing npm ci to npm install --no-audit --no-fund will allow your GitHub Action to run without crashing due to the missing package-lock.json
-
       # Optional: Run test suite if you have tests configured
       - name: Run Tests
         run: npm test --if-present -- --watchAll=false
 
       - name: Build Project
         run: npm run build
-
-
- 
