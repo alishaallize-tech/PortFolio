@@ -30,7 +30,7 @@ function Hero() {
             Passionate Frontend Developer with 4+ years of experience
             building responsive, scalable, and high-performance web
             applications using React.js, JavaScript, TypeScript,
-            Redux Toolkit, Tailwind CSS, and REST APIs.
+            Redux Toolkit, Tailwind CSS, Next.Js and REST APIs.
           </p>
 
           <div className="mt-8 flex gap-4">
