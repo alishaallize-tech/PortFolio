@@ -47,7 +47,7 @@ function About() {
               4 years of experience building scalable, responsive,
               and high-performance web applications using React.js,
               JavaScript, TypeScript, Redux Toolkit, Tailwind CSS,
-              REST APIs, and modern frontend technologies.
+              REST APIs, Next.Js and modern frontend technologies.
             </p>
 
             <p className="mt-5 text-gray-600 dark:text-gray-300 leading-8">
