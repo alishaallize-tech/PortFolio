@@ -16,13 +16,13 @@ function Hero() {
       });
   };
 
-  const scrollToProjects = () => {
-    document
-      .getElementById("projects")
-      ?.scrollIntoView({
-        behavior: "smooth",
-      });
-  };
+  // const scrollToProjects = () => {
+  //   document
+  //     .getElementById("projects")
+  //     ?.scrollIntoView({
+  //       behavior: "smooth",
+  //     });
+  // };
 
   return (
     <section
@@ -83,14 +83,19 @@ function Hero() {
 
           <div className="flex flex-wrap gap-4 mt-8">
 
-            <button
+            {/* <button
               onClick={scrollToProjects}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition hover:-translate-y-1 shadow-lg shadow-blue-600/20"
             >
               View Projects
+            </button> */}
+
+         <button
+              onClick={scrollToContact}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition hover:-translate-y-1 shadow-lg shadow-blue-600/20"
+            >
+              Contact Me
             </button>
-
-
             <a
               href="/AlishaResume.pdf"
               download="AlishaResume.pdf"
