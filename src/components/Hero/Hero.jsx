@@ -32,12 +32,15 @@ function Hero() {
             applications using React.js, JavaScript, TypeScript,
             Redux Toolkit, Tailwind CSS, Next.Js and REST APIs.
           </p>
-
+{/* AlishaFullStack */}
           <div className="mt-8 flex gap-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              Download Resume
-            </button>
-
+ <a
+    href="/AlishaResume.pdf"
+    download="AlishaResume.pdf"
+    className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+  >
+    Download Resume
+  </a>
             <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
               Contact Me
             </button>
