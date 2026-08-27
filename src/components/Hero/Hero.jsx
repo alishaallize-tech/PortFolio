@@ -7,7 +7,7 @@ function Hero() {
     <section className="min-h-screen bg-gray-50 flex items-center">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
-        {/* Left Content */}
+        {/* Left Content */} 
         <motion.div
           initial={{ x: -80, opacity: 0}}
           animate={{ x: 0, opacity: 1 }}
