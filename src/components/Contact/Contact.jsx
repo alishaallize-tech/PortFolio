@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaEnvelope,
@@ -8,6 +9,50 @@ import {
 } from "react-icons/fa";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = `New Portfolio Contact from ${formData.name}`;
+
+    const body = `
+Hello Alisha,
+
+You have received a new message from your portfolio website.
+
+Name: ${formData.name}
+
+Email: ${formData.email}
+
+Message:
+${formData.message}
+
+--------------------------------
+Sent from Portfolio Contact Form
+`;
+
+    // Open Gmail compose window
+    const gmailUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1` +
+      `&to=alishakamboj0909@gmail.com` +
+      `&su=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    window.open(gmailUrl, "_blank");
+  };
+
   return (
     <section
       id="contact"
@@ -35,7 +80,6 @@ function Contact() {
 
       </div>
 
-
       {/* ================= CONTENT ================= */}
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 mt-16">
@@ -60,8 +104,7 @@ function Contact() {
             to build useful and modern web applications.
           </p>
 
-
-          {/* EMAIL */}
+          {/* ================= EMAIL ================= */}
 
           <div className="flex items-center gap-5 border border-gray-800 bg-[#0f1420] rounded-2xl p-5 mt-10">
 
@@ -84,8 +127,7 @@ function Contact() {
 
           </div>
 
-
-          {/* LOCATION */}
+          {/* ================= LOCATION ================= */}
 
           <div className="flex items-center gap-5 border border-gray-800 bg-[#0f1420] rounded-2xl p-5 mt-5">
 
@@ -105,8 +147,7 @@ function Contact() {
 
           </div>
 
-
-          {/* SOCIAL */}
+          {/* ================= SOCIAL ================= */}
 
           <div className="mt-10">
 
@@ -116,6 +157,8 @@ function Contact() {
 
             <div className="flex gap-4">
 
+              {/* GITHUB */}
+
               <a
                 href="https://github.com/alishaallize-tech"
                 target="_blank"
@@ -124,6 +167,8 @@ function Contact() {
               >
                 <FaGithub />
               </a>
+
+              {/* LINKEDIN */}
 
               <a
                 href="https://www.linkedin.com/"
@@ -140,7 +185,6 @@ function Contact() {
 
         </motion.div>
 
-
         {/* ================= RIGHT ================= */}
 
         <motion.div
@@ -155,32 +199,34 @@ function Contact() {
             Send Me a Message
           </h3>
 
+          {/* ================= FORM ================= */}
 
           <form
-            action="mailto:YOUR_EMAIL@gmail.com"
-            method="POST"
-            encType="text/plain"
+            onSubmit={handleSubmit}
             className="mt-8"
           >
 
-            {/* NAME */}
+            {/* ================= NAME ================= */}
 
             <div>
+
               <label className="block text-gray-300 font-semibold mb-3">
                 Your Name
               </label>
 
               <input
                 type="text"
-                name="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Enter your name"
                 required
                 className="w-full bg-[#080c14] border border-gray-800 rounded-xl px-5 py-4 text-white placeholder-gray-600 outline-none focus:border-blue-500 transition"
               />
+
             </div>
 
-
-            {/* EMAIL */}
+            {/* ================= EMAIL ================= */}
 
             <div className="mt-6">
 
@@ -190,7 +236,9 @@ function Contact() {
 
               <input
                 type="email"
-                name="Email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Enter your email"
                 required
                 className="w-full bg-[#080c14] border border-gray-800 rounded-xl px-5 py-4 text-white placeholder-gray-600 outline-none focus:border-blue-500 transition"
@@ -198,8 +246,7 @@ function Contact() {
 
             </div>
 
-
-            {/* MESSAGE */}
+            {/* ================= MESSAGE ================= */}
 
             <div className="mt-6">
 
@@ -208,7 +255,9 @@ function Contact() {
               </label>
 
               <textarea
-                name="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows="6"
                 placeholder="Tell me about your project..."
                 required
@@ -217,15 +266,17 @@ function Contact() {
 
             </div>
 
-
-            {/* SEND BUTTON */}
+            {/* ================= SEND BUTTON ================= */}
 
             <button
               type="submit"
               className="w-full mt-7 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition"
             >
+
               <FaPaperPlane />
+
               Send Message
+
             </button>
 
           </form>
@@ -239,3 +290,4 @@ function Contact() {
 }
 
 export default Contact;
+
