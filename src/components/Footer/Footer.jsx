@@ -154,7 +154,7 @@ function Footer() {
             All rights reserved.
           </p>
 
-          <p className="text-gray-500">
+          {/* <p className="text-gray-500">
             Built with{" "}
             <span className="text-white font-semibold">
               React
@@ -163,7 +163,7 @@ function Footer() {
             <span className="text-white font-semibold">
               Tailwind CSS
             </span>
-          </p>
+          </p> */}
 
         </div>
 
