@@ -92,7 +92,7 @@ function About() {
               </h4>
 
               <p className="text-gray-400 text-sm mt-2">
-                4+ Years
+                5 Years
               </p>
 
             </div>
