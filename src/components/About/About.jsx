@@ -118,27 +118,16 @@ function About() {
 
 
           <p className="text-gray-400 leading-8 text-lg">
-            Hi, I'm Alisha Kamboj, a Frontend Developer with
-            over 4 years of experience building scalable,
-            responsive, and high-performance web applications
-            using React.js, JavaScript, TypeScript, Redux
-            Toolkit, Tailwind CSS, Next.js and REST APIs.
+          Hi, I'm Alisha Kamboj, a Full Stack Developer with more than 5 years of experience building scalable, responsive, and high-performance web applications using React.js, Next.js, JavaScript, TypeScript, Node.js, Express.js, MongoDB, REST APIs, and Micro Frontends.
           </p>
 
 
           <p className="text-gray-400 leading-8 text-lg mt-5">
-            I have worked in the FinTech domain, developing
-            Investor Portals, Loan Management Systems, Wallet
-            Modules and Portfolio Dashboards. My focus is on
-            writing clean, reusable and optimized code while
-            delivering an excellent user experience.
+          I have worked across both the FinTech and Telecom domains, developing solutions such as Investor Portals, Loan Management Systems, Wallet Modules, and Portfolio Dashboards. I specialize in building modular frontend applications, Micro Frontends, and integrating backend services to create scalable and high-performance solutions.
           </p>
 
-
           <p className="text-gray-400 leading-8 text-lg mt-5">
-            I enjoy solving real-world problems through clean
-            code, learning new technologies and continuously
-            improving my development skills.
+          I focus on writing clean, reusable, and optimized code while delivering seamless user experiences. I enjoy solving real-world problems, learning new technologies, and continuously improving my development skills.
           </p>
 
         </motion.div>

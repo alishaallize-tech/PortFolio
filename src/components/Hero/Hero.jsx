@@ -62,7 +62,7 @@ function Hero() {
           {/* Role */}
 
           <h2 className="text-2xl md:text-3xl font-bold text-gray-200 mt-8">
-            React.js Frontend Developer
+          Full Stack Developer | React.js Specialist | Micro Frontends
           </h2>
 
 
@@ -70,14 +70,12 @@ function Hero() {
 
           <p className="mt-6 text-gray-400 text-lg leading-8 max-w-2xl">
 
-            Frontend Developer with 4+ years of experience
-            building responsive, scalable and high-performance
-            web applications using React.js, JavaScript,
-            TypeScript, Redux Toolkit, Tailwind CSS,
-            Next.js and REST APIs.
-
+          Frontend Developer with Full Stack experience and 5 years of experience building scalable, responsive, and high-performance applications using React.js, JavaScript, TypeScript, Next.js, Redux Toolkit, Tailwind CSS, Node.js, Express.js, MongoDB, REST APIs, and Micro Frontend architecture. 
           </p>
+          <p className="text-gray-400 leading-8 text-lg mt-5">
+          Experienced in developing solutions across the FinTech and Telecom domains, including Investor Portals, Loan Management Systems, Wallet Modules, Portfolio Dashboards, and Telecom Management Systems. Contributed to building scalable web applications for telecom and aerial communication platforms, with a focus on clean, reusable, optimized, and user-friendly solutions.
 
+            </p>
 
           {/* Buttons */}
 
