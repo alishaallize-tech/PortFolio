@@ -2,7 +2,7 @@
 
 Hi, I'm Alisha 👋
 
-Frontend Developer with 4 years of experience in React.js.
+Frontend Developer with 5 years of experience in React.js.
 
 ## 🚀 Technologies
 - React.js
