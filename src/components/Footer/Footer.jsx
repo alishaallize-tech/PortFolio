@@ -37,8 +37,7 @@ function Footer() {
             </h3>
 
             <p className="text-gray-400 text-lg leading-8 mt-6 max-w-md">
-              Frontend Developer focused on building modern,
-              responsive and user-friendly web applications.
+            MERN Stack Developer focused on building modern, scalable, responsive, and user-friendly web applications with Micro Frontend architecture.
             </p>
 
           </div>
@@ -154,7 +153,7 @@ function Footer() {
             All rights reserved.
           </p>
 
-          {/* <p className="text-gray-500">
+          {/* <p className="text-gray-500">Years Experience
             Built with{" "}
             <span className="text-white font-semibold">
               React
