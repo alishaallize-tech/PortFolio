@@ -5,7 +5,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-import profile from "../../assets/Alisha.jpgg";
+import profile from "../../assets/Alisha.jpg";
 
 function Hero() {
   const scrollToContact = () => {
