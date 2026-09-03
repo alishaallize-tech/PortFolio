@@ -143,7 +143,7 @@ function Hero() {
 
             <div>
               <h3 className="text-3xl font-extrabold text-blue-400">
-                4+
+                5
               </h3>
 
               <p className="text-gray-400 mt-1">
